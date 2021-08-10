@@ -160,7 +160,6 @@ function suma(num1, num2) {
     var suma = num1 + num2;
     if (isNaN(suma) == false) {
       resultado.innerHTML = "La suma es " + suma;
-      S;
     }
   }
 }
@@ -171,7 +170,6 @@ function resta(num1, num2) {
     var resta = num1 - num2;
     if (isNaN(resta) == false) {
       resultado.innerHTML = "La resta es " + resta;
-      S;
     }
   }
 }
@@ -182,7 +180,6 @@ function multiplicacion(num1, num2) {
     var multiplicacion = num1 * num2;
     if (isNaN(multiplicacion) == false) {
       resultado.innerHTML = "La multiplicación es " + multiplicacion;
-      S;
     }
   }
 }
@@ -193,7 +190,6 @@ function division(num1, num2) {
     var division = num1 / num2;
     if (isNaN(division) == false) {
       resultado.innerHTML = "La división es " + division;
-      S;
     }
   }
 }
@@ -204,7 +200,6 @@ function modulo(num1, num2) {
     var modulo = num1 % num2;
     if (isNaN(modulo) == false) {
       resultado.innerHTML = "El módulo es " + modulo;
-      S;
     }
   }
 }
