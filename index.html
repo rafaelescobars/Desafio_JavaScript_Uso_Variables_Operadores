@@ -27,29 +27,29 @@
 
   <!-- Header | Botones Principales -->
   <header>
-    <div class="container">
+    <div class="container pb-3">
       <div class="row">
-        <div class="col pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+        <div class="col text-center pt-3">
+          <button id="flowcharts_button" type="button" class="btn btn-outline-secondary h-100">
             Diagramas de flujo
           </button>
         </div>
-        <div class="col pt-3">
+        <div class="col text-center pt-3">
           <button type="button" class="btn btn-outline-secondary h-100">
             Operaciones con dos números
           </button>
         </div>
-        <div class="col pt-3">
+        <div class="col text-center pt-3">
           <button type="button" class="btn btn-outline-secondary h-100">
             Temperatura
           </button>
         </div>
-        <div class="col pt-3">
+        <div class="col text-center pt-3">
           <button type="button" class="btn btn-outline-secondary h-100">
             Años, semanas, días
           </button>
         </div>
-        <div class="col pt-3">
+        <div class="col text-center pt-3">
           <button type="button" class="btn btn-outline-secondary h-100">
             Suma y promedio
           </button>
@@ -59,56 +59,79 @@
   </header>
 
   <!-- Sección Diagramas De Flujo -->
-  <Section>
-    <div class="container">
-      <div class="row">
+  <Section class="">
+    <div id="flowcharts_content" class="container-fluid d-none">
+      <div id="flowcharts_operations" class="row bg-dark pb-3 px-5">
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="suma_button" type="button" class="btn btn-outline-secondary h-100">
             Suma
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="resta_button" type="button" class="btn btn-outline-secondary h-100">
             Resta
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="multiplicacion_button" type="button" class="btn btn-outline-secondary h-100">
             Multiplicación
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="division_button" type="button" class="btn btn-outline-secondary h-100">
             División
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="modulo_button" type="button" class="btn btn-outline-secondary h-100">
             Módulo
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col text-center pt-3">
+
+
+
+      <div id="flowcharts" class="row">
+        <div id="suma_flowchart" class="col text-center pt-3 d-none">
           <img src="./assets/img/Suma.png" alt="Suma">
         </div>
-        <div class="col text-center pt-3">
+        <div id="resta_flowchart" class="col text-center pt-3 d-none">
           <img src="./assets/img/Resta.png" alt="Suma">
         </div>
-        <div class="col text-center pt-3">
+        <div id="multiplicacion_flowchart" class="col text-center pt-3 d-none">
           <img src="./assets/img/Multiplicacion.png" alt="Suma">
         </div>
-        <div class="col text-center pt-3">
+        <div id="division_flowchart" class="col text-center pt-3 d-none">
           <img src="./assets/img/Division.png" alt="Suma">
         </div>
-        <div class="col text-center pt-3">
+        <div id="modulo_flowchart" class="col text-center pt-3 d-none">
           <img src="./assets/img/Modulo.png" alt="Suma">
         </div>
       </div>
+
+
     </div>
   </Section>
 
+  <!-- Sección Operaciones con dos Números -->
+  <section>
 
+  </section>
+
+  <!-- Seccion Temperatura -->
+  <Section>
+
+  </Section>
+
+  <!-- Seccion Años, semanas, dias -->
+  <section>
+
+  </section>
+
+  <!-- Seccion Suma y Promedio -->
+  <Section>
+
+  </Section>
 
 
 
