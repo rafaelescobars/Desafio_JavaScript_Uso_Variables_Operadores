@@ -35,7 +35,7 @@
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="operations_button" type="button" class="btn btn-outline-secondary h-100">
             Operaciones con dos números
           </button>
         </div>
@@ -59,31 +59,31 @@
   </header>
 
   <!-- Sección Diagramas De Flujo -->
-  <Section class="">
+  <Section>
     <div id="flowcharts_content" class="container-fluid d-none">
       <div id="flowcharts_operations" class="row bg-dark pb-3 px-5">
         <div class="col text-center pt-3">
-          <button id="suma_button" type="button" class="btn btn-outline-secondary h-100">
+          <button id="suma_flowchart_button" type="button" class="btn btn-outline-light h-100">
             Suma
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button id="resta_button" type="button" class="btn btn-outline-secondary h-100">
+          <button id="resta_flowchart_button" type="button" class="btn btn-outline-light h-100">
             Resta
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button id="multiplicacion_button" type="button" class="btn btn-outline-secondary h-100">
+          <button id="multiplicacion_flowchart_button" type="button" class="btn btn-outline-light h-100">
             Multiplicación
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button id="division_button" type="button" class="btn btn-outline-secondary h-100">
+          <button id="division_flowchart_button" type="button" class="btn btn-outline-light h-100">
             División
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button id="modulo_button" type="button" class="btn btn-outline-secondary h-100">
+          <button id="modulo_flowchart_button" type="button" class="btn btn-outline-light h-100">
             Módulo
           </button>
         </div>
@@ -115,6 +115,71 @@
 
   <!-- Sección Operaciones con dos Números -->
   <section>
+    <div class="container-fluid bg-dark px-5">
+      <div id="operations_section" class="container-fluid d-none bg-dark text-light px-5 pt-3">
+        <form action="">
+          <legend>
+            Ingrese dos números diferentes y mayores que cero
+          </legend>
+          <div>
+            <label for="text" class="form-label">
+              Primer Número
+            </label>
+            <input id="num1" type="text" class="form-control" onkeyup="numbers_only(this)">
+          </div>
+          <div>
+            <label for="text" class="form-label">
+              Segundo Número
+            </label>
+            <input id="num2" type="text" class="form-control" onkeyup="numbers_only(this)">
+          </div>
+        </form>
+      </div>
+      <div id="operations_buttons" class="container-fluid d-none">
+        <div id="" class="row bg-dark pb-3">
+          <div class="col text-center pt-3">
+            <button id="suma_operation_button" type="button"
+              onclick='suma(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              class="btn btn-outline-light h-100">
+              Suma
+            </button>
+          </div>
+          <div class="col text-center pt-3">
+            <button id="resta_operation_button" type="button"
+              onclick='resta(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              class="btn btn-outline-light h-100">
+              Resta
+            </button>
+          </div>
+          <div class="col text-center pt-3">
+            <button id="multiplicacion_operation_button" type="button"
+              onclick='multiplicacion(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              class="btn btn-outline-light h-100">
+              Multiplicación
+            </button>
+          </div>
+          <div class="col text-center pt-3">
+            <button id="division_operation_button" type="button"
+              onclick='division(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              class="btn btn-outline-light h-100">
+              División
+            </button>
+          </div>
+          <div class="col text-center pt-3">
+            <button id="modulo_operation_button" type="button"
+              onclick='modulo(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              class="btn btn-outline-light h-100">
+              Módulo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contariner-fluid text-center fs-5 fw-bold pt-3">
+      <div id="resultado" class="container d-none">
+
+      </div>
+    </div>
 
   </section>
 
