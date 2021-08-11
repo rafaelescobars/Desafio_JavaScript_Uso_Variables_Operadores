@@ -40,17 +40,17 @@
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="temperatura_button" onclick="" type="button" class="btn btn-outline-secondary h-100">
             Temperatura
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="dias_button" type="button" class="btn btn-outline-secondary h-100">
             Años, semanas, días
           </button>
         </div>
         <div class="col text-center pt-3">
-          <button type="button" class="btn btn-outline-secondary h-100">
+          <button id="promedio_button" type="button" class="btn btn-outline-secondary h-100">
             Suma y promedio
           </button>
         </div>
@@ -135,7 +135,7 @@
           </div>
         </form>
       </div>
-      <div id="operations_buttons" class="container-fluid d-none">
+      <div id="operations_buttons" class="container-fluid d-none pb-3">
         <div id="" class="row bg-dark pb-3">
           <div class="col text-center pt-3">
             <button id="suma_operation_button" type="button"
@@ -175,7 +175,7 @@
         </div>
       </div>
     </div>
-    <div class="contariner-fluid text-center fs-5 fw-bold pt-3">
+    <div class="contariner-fluid text-center fs-5 fw-bold">
       <div id="resultado" class="container d-none">
 
       </div>
@@ -185,17 +185,111 @@
 
   <!-- Seccion Temperatura -->
   <Section>
+    <div id="temperatura_section" class="container-fluid bg-dark px-5 d-none">
+      <div class="container-fluid bg-dark text-light pt-3 px-5">
+        <form action="">
+          <legend class="pb-3 mb-0">
+            Ingrese temperatura en grados Celsius
+          </legend>
+          <div>
+            <input id="t_celsius" type="number" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center pb-3">
+            <button id="aceptar_temperatura_button" type="button"
+              onclick='aceptar_temperatura_button(document.getElementById("t_celsius").value)'
+              class="btn btn-outline-light h-100">
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contariner-fluid text-center fs-5 fw-bold">
+      <div id="temperatura_resultado" class="container d-none">
 
+      </div>
+    </div>
   </Section>
 
   <!-- Seccion Años, semanas, dias -->
   <section>
+    <div id="dias_section" class="container-fluid bg-dark px-5 d-none">
+      <div class="container-fluid bg-dark text-light pt-3 px-5">
+        <form action="">
+          <legend class="pb-3 mb-0">
+            Ingrese número de días
+          </legend>
+          <div>
+            <input id="dias" type="number" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center pb-3">
+            <button id="aceptar_dias_button" type="button"
+              onclick='aceptar_dias_button(document.getElementById("dias").value)' class="btn btn-outline-light h-100">
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contariner-fluid text-center fs-5 fw-bold">
+      <div id="dias_resultado" class="container d-none">
 
+      </div>
+    </div>
   </section>
 
   <!-- Seccion Suma y Promedio -->
   <Section>
+    <div id="promedio_section" class="container-fluid bg-dark px-5 d-none">
+      <div class="container-fluid bg-dark text-light pt-3 px-5">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center fs-4 ">
+              Ingrese 5 números para calcular la suma y el promedio
+            </div>
+          </div>
+          <div class="row">
+            <div class="col pt-3">
+              <input id="n1" type="number" class="form-control">
+            </div>
+            <div class="col pt-3">
+              <input id="n2" type="number" class="form-control">
+            </div>
+            <div class="col pt-3">
+              <input id="n3" type="number" class="form-control">
+            </div>
+            <div class="col pt-3">
+              <input id="n4" type="number" class="form-control">
+            </div>
+            <div class="col pt-3">
+              <input id="n5" type="number" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center py-3">
+              <button id="aceptar_dias_button" type="button"
+                onclick='aceptar_promedio_button(document.getElementById("n1").value,document.getElementById("n2").value,document.getElementById("n3").value,document.getElementById("n4").value,document.getElementById("n5").value,)'
+                class="btn btn-outline-light h-100">
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contariner-fluid text-center fs-5 fw-bold">
+      <div id="promedio_resultado" class="container d-none">
 
+      </div>
+    </div>
   </Section>
 
 
