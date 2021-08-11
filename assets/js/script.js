@@ -134,12 +134,19 @@ operations_button.onclick = function () {
 
 //Evitar que se presionesn teclas que no sean numeros
 function numbers_only(input) {
-  var regex = /[^0-9]/gi;
+  var regex = /[^0-9\.\,]/gi;
   input.value = input.value.replace(regex, "");
+}
+
+//Cambiar formato de números
+function formato_numeros(input) {
+  input.value = Intl.NumberFormat("de-DE").format(parseFloat(input.value));
 }
 
 //Validación de datos
 function validacion(num1, num2) {
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
   if (num1 > 0 && num2 > 0) {
     if (num1 != num2) {
     } else {
@@ -155,6 +162,8 @@ function validacion(num1, num2) {
 }
 
 function suma(num1, num2) {
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
   if (validacion(num1, num2) == false) {
   } else {
     var suma = num1 + num2;

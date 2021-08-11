@@ -125,13 +125,13 @@
             <label for="text" class="form-label">
               Primer Número
             </label>
-            <input id="num1" type="text" class="form-control" onkeyup="numbers_only(this)">
+            <input id="num1" type="number" class="form-control">
           </div>
           <div>
             <label for="text" class="form-label">
               Segundo Número
             </label>
-            <input id="num2" type="text" class="form-control" onkeyup="numbers_only(this)">
+            <input id="num2" type="number" class="form-control">
           </div>
         </form>
       </div>
@@ -139,35 +139,35 @@
         <div id="" class="row bg-dark pb-3">
           <div class="col text-center pt-3">
             <button id="suma_operation_button" type="button"
-              onclick='suma(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              onclick='suma(document.getElementById("num1").value,document.getElementById("num2").value)'
               class="btn btn-outline-light h-100">
               Suma
             </button>
           </div>
           <div class="col text-center pt-3">
             <button id="resta_operation_button" type="button"
-              onclick='resta(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              onclick='resta(document.getElementById("num1").value,document.getElementById("num2").value)'
               class="btn btn-outline-light h-100">
               Resta
             </button>
           </div>
           <div class="col text-center pt-3">
             <button id="multiplicacion_operation_button" type="button"
-              onclick='multiplicacion(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              onclick='multiplicacion(document.getElementById("num1").value,document.getElementById("num2").value)'
               class="btn btn-outline-light h-100">
               Multiplicación
             </button>
           </div>
           <div class="col text-center pt-3">
             <button id="division_operation_button" type="button"
-              onclick='division(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              onclick='division(document.getElementById("num1").value,document.getElementById("num2").value)'
               class="btn btn-outline-light h-100">
               División
             </button>
           </div>
           <div class="col text-center pt-3">
             <button id="modulo_operation_button" type="button"
-              onclick='modulo(parseInt(document.getElementById("num1").value),parseInt(document.getElementById("num2").value))'
+              onclick='modulo(document.getElementById("num1").value,document.getElementById("num2").value)'
               class="btn btn-outline-light h-100">
               Módulo
             </button>
